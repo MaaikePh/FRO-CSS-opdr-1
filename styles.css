@@ -18,29 +18,21 @@ Gebruik dit om de tekstkleur van de titels te veranderen naar grijs, met de decl
 /* 2: Geef de <span>-tag in de footer van het HTML-document een passende class-naam. Gebruik de declaratie "font-size: 10px;"
 om de tekst kleiner te maken */
 
-.footer {
+.copyright-mark-footer {
     font-size: 10px;
 }
 
 /* 3: Gebruik een type selector om alle headings op de pagina (<h1>, <h2> en <h3>) in een ander lettertype weer te geven.
 Gebruik de declaratie "font-family: 'Noto Sans JP', sans-serif;" */
 
-h1 {
-    font-family: Noto Sans JP;, sans-serif;
-}
-
-h2 {
-    font-family: Noto Sans JP;, sans-serif;
-}
-
-h3 {
-    font-family: Noto Sans JP;, sans-serif;
+h1, h2, h3 {
+    font-family: Noto Sans JP, sans-serif;
 }
 
 /* 4: De header afbeelding is op dit moment te groot. Geef de <img>-tag in de header van het HTML-document een passende id-naam,
 zodat we de declaratie "width: 100%;" in de CSS erop toe te passen */
 
-#image {
+#header-image {
     width: 100%;
 }
 
@@ -69,7 +61,7 @@ Tip: gebruik hier een combinator voor. */
 /* 8: De buttons lijken op dit moment te veel op elkaar. Zorg ervoor dat je de rechter button een achtergrondkleur van "indianred"
 kunt geven. Tip: gebruik hier een combinator voor. */
 
-button ~ button {
+button + button {
     background-color: indianred;
 }
 
@@ -77,6 +69,6 @@ button ~ button {
 achtergrondkleur "forestgreen" krijgt, wanneer de gebruiker het veld aanklikt.
 Tip: gebruik hier naast een class-selector, ook een pseudo-class voor.*/
 
-.input:focus {
+.email-input:focus {
     background-color: forestgreen;
 }
